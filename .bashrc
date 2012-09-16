@@ -1,4 +1,4 @@
-
+alias dim='echo 3 | sudo tee /sys/class/backlight/intel_backlight/brightness'
 # .bashrc
 
 ## environment variables
@@ -14,6 +14,7 @@ alias restartmouse='sudo modprobe -r psmouse && sudo modprobe psmouse'
 alias restartsound='sudo modprobe -r snd-hda-intel && sudo modprobe snd-hda-intel'
 alias restartbluetooth='sudo /etc/init.d/bluetooth force-reload && sudo pkill -KILL bluetoothd && sudo bluetoothd -u'
 alias restartmongo='sudo rm /var/lib/mongodb/mongod.lock && sudo -u mongodb mongod -f /etc/mongodb.conf --repair && sudo /etc/init.d/mongodb restart'
+alias dim='echo 3 | sudo tee /sys/class/backlight/intel_backlight/brightness'
 
 ## git aliases thanks to @tjholowaychuk
 ## <http://tjholowaychuk.com/post/26904939933/git-extras-introduction-screencast>
